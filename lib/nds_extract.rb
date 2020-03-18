@@ -19,7 +19,7 @@ def directors_totals(nds)
 
       while movie_counter < nds[dir_counter][:movies].size do
             gross = nds[dir_counter][:movies][movie_counter][:worldwide_gross]
-            totals[name] += gross
+            gross_total[name] += gross
           movie_counter += 1
       end
       dir_counter += 1
@@ -27,6 +27,7 @@ def directors_totals(nds)
 
   totals
 end
+
 
 # [{:name=>"Stephen Spielberg",
 #   :movies=>
